@@ -1,7 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using BackgroundLocationSample.Services;
 using BackgroundLocationSample.Views;
 
 namespace BackgroundLocationSample
@@ -13,7 +12,6 @@ namespace BackgroundLocationSample
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             MainPage = new AppShell();
         }
 

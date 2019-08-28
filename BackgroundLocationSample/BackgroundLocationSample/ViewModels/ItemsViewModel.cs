@@ -25,7 +25,7 @@ namespace BackgroundLocationSample.ViewModels
             {
                 var newItem = item as Item;
                 Items.Add(newItem);
-                await DataStore.AddItemAsync(newItem);
+                //await DataStore.AddItemAsync(newItem);
             });
         }
 
@@ -39,11 +39,13 @@ namespace BackgroundLocationSample.ViewModels
             try
             {
                 Items.Clear();
+                /*
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
                     Items.Add(item);
                 }
+                */
             }
             catch (Exception ex)
             {
